@@ -4,30 +4,28 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://kit.fontawesome.com/75d86a86f1.js" crossorigin="anonymous"></script>
-        <!-- <link rel="stylesheet" href="styles.css"> -->
         <link rel="stylesheet" href="about.css">
         </head>
     <body>
         <header class="about-section">
-            <!-- <section class="top">
+            <section class="top">
                 <i class="fa-brands fa-facebook-f"></i>
                 <i class="fa-brands fa-twitter"></i>
                 <a href="#">Log out</a>
                 <a href="#">My page</a>
-            </section> -->
+            </section>
             <nav class="navigation-section">
                 <i class="fa-sharp fa-solid fa-bars"></i>   
-                <a href="index.html"><img src="images/YCA Main Logo.png" class ="home-logo" ></a> 
-                <div class="nav-links">
-                    <ul>
-                        <li><a href="index.html" class="home">Home</a></li>
-                        <li><a href="#" class="about-us-link">About</a></li>
-                        <li><a href="" class="disabled">Program</a></li>
-                        <li><a href="" class="disabled">Join</a></li>
-                        <li><a href="" class="disabled">Sponsors</a></li>
-                        <li><a href=""class="disabled">News</a></li>
-                        </ul>
-                </div>            
+                <a href="index.html"><img src="images/YCA Main Logo.png" class ="home-logo" alt="youth-connect-logo"></a> 
+                    <ul class="nav-items">
+                        <i class="fa-solid fa-x"></i>
+                        <li><a href="index.html" class="home nav-link">Home</a></li>
+                        <li><a href="#" class="about-us-link nav-link">About</a></li>
+                        <li><a href="" class="disabled nav-link">Program</a></li>
+                        <li><a href="" class="disabled nav-link">Join</a></li>
+                        <li><a href="" class="disabled nav-link">Sponsors</a></li>
+                        <li><a href=""class="disabled nav-link">News</a></li>
+                        </ul>           
             </nav>
             <section class="about-contents">
               <div>
@@ -46,7 +44,7 @@
                   <hr>
                   <p>Youth connect Africa logo was invented in 2015</p>
             </section>
-                  <img src="images/YCA Main Logo.png" id="youth-logo">
+                  <img src="images/YCA Main Logo.png" id="youth-logo" alt="youth-connect-logo">
             </section>
             <section class="about-past">
                 <section class="about-past-content about">
@@ -75,17 +73,30 @@
                         <hr>
                     </div>
                     <section class="partner-image">
-                       <img src="images/imbuto-foundation-logo.png" class ="footer-logo">
-                       <img src="images/YCA Main Logo.png" class ="footer-logo">
-                       <img src="images/google.png" class ="footer-logo">
-                       <img src="images/airbnbmain.png" class ="footer-logo">
-                       <img src="images/lumen.png" class ="footer-logo">
+                       <img src="images/imbuto-foundation-logo.png" class ="footer-logo"alt="imbuto-foundation-logo">
+                       <img src="images/YCA Main Logo.png" class ="footer-logo" alt="youth-connect-logo">
+                       <img src="images/google.png" class ="footer-logo" alt="google">
+                       <img src="images/airbnbmain.png" class ="footer-logo" alt="airbnb">
+                       <img src="images/lumen.png" class ="footer-logo" alt="lumen">
                     </section>
                 </section>
                 <section class="copyright">
-                     <img src="images/YCA Main Logo.png">
+                     <img src="images/YCA Main Logo.png" alt="youth-connect-logo">
                      <p> © Copyright YouthConnekt Africa 2023. All Rights Reserved.</p>
                     </section> 
             </footer> 
+            <script>
+                const HamburgMenu = document.querySelector('.fa-bars');
+                const navLinks = document.querySelector('.nav-items');
+                const closeIcon = document.querySelector('.fa-x');
+
+                 HamburgMenu.addEventListener('click', () => {
+                    navLinks.classList.toggle('active');
+                  });
+
+                closeIcon.addEventListener('click', ()=>{
+                      navLinks.classList.remove('active');
+                 });     
+            </script>
         </body>
         </html>
