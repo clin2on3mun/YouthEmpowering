@@ -43,7 +43,7 @@ const featureSpeakers = [{
 
 {
   id: 5,
-  imagesSrc: 'images/youth Leader 4.jpg',
+  imagesSrc: 'images/youthLeader.jpg',
   speakerName: 'Oluwatoyosi Ogunseye',
   speakerInfo: 'African Journalist',
   speakerBio: 'Oluwatoyosi has received 25 awards including the CNN MultiChoice African Journalist of the Year Award ',
