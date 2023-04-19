@@ -109,6 +109,10 @@ a.about-us-link:visited {
   color: var(--primary-color);
 }
 
+a.disabled {
+  color: #aca9a9;
+}
+
 .about-contents {
   padding: 10rem 2rem 5rem 2rem;
   text-align: center;
