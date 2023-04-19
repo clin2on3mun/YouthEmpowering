@@ -8,9 +8,9 @@
 }
 
 :root {
-      --base-color: #f6f4f4;
-      --primary-color: #ec5242;
-      --secondary-color: #272a31;
+  --base-color: #d3d3d3;
+  --primary-color: #ec5242;
+  --secondary-color: #272a31;
 }
 
 body {
@@ -18,275 +18,329 @@ body {
   font-family: "Lato", "Inter", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
 }
 
-hr{
-  width:10%;
-  border:1px solid var(--primary-color);
+hr {
+  width: 3%;
+  border: 1px solid var(--primary-color);
   margin: 5px auto;
 }
 
-h3, p {
-  text-align:center;
+h3,
+p {
+  text-align: center;
 }
 
 .navigation-section {
   padding: 10px;
-  position: fixed;
-  background-color: #fff;
-  width:100%;
+  width: 100%;
 }
 
 .top {
-  display:none;
+  display: none;
 }
 
 a {
   text-decoration: none;
 }
 
-ul{
+ul {
   list-style-type: none;
 }
+
 .about-section {
-    background-image: url('images/about_bg_01.png');
-    background-size:150%;
-    background-repeat: no-repeat;
-    background-color: var(--base-color);
+  background-color: var(--base-color);
+  background-image: url('images/about_bg_01.png');
+  background-size: 150%;
+  background-repeat: no-repeat;
 }
 
-.nav-links, .navigation-section > a{
-  display:none;
+.nav-links,
+.nav-items,
+.navigation-section > a {
+  display: none;
+}
+
+.fa-bars {
+  font-size: 1.8rem;
+  color: var(--secondary-color);
 }
 
 .flex {
-    display:flex;
-    align-items:center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.fa-x {
+  color: var(--secondary-color);
+  position: absolute;
+  left: 90%;
+  top: 5%;
+}
+
+@media screen and (max-width: 767px) {
+  .nav-items.active {
+    position: fixed;
+    background-color: #fff;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+    padding-top: 20%;
+    padding-left: 5%;
+    transition: 15s ease;
+  }
+
+  .nav-link {
+    font-size: 2em;
+    color: var(--secondary-color);
+    font-weight: 700;
+  }
+}
+
+a.about-us-link:visited {
+  color: var(--primary-color);
 }
 
 .about-contents {
-    padding:10rem 2rem 5rem 2rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:10px;
+  padding: 10rem 2rem 5rem 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
-
 
 #welcome-text {
-    color:var(--primary-color);
-    font-weight:500;
-    font-size:2.5em;
- }
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 2.5em;
+}
 
 .about-title {
-    font-size:2.2em;
-    font-weight: 800;
-    color:var(--primary-color)
-}
-.about-description {
-    background-color: #fff;
-    border: 2px solid #fff;
-    color:#272a31;
-    font-size:1.1em;
-    padding:1rem;
-    width:70%;
+  font-size: 2.2em;
+  font-weight: 800;
+  color: var(--primary-color);
+  line-height: 1em;
 }
 
+.about-description {
+  background-color: #fff;
+  border: 2px solid #fff;
+  color: #272a31;
+  font-size: 1.1em;
+  padding: 1rem;
+  font-weight: 700;
+}
 
 .about {
-    color:#272a31;
+  color: #272a31;
 }
 
 span.about {
-  font-size:0.9em;
+  font-size: 0.9em;
   font-weight: 700;
 }
 
 p.about {
-  font-weight:600;
+  font-weight: 600;
 }
 
 .about-us {
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap:1.5rem;
-    padding-top:2rem;
-    padding-bottom: 8%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 8%;
 }
 
 .about-content {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap:5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
 }
 
 .about-content > h3 {
-    font-size: 1.3em;
-    font-weight: 600;
+  font-size: 1.3em;
+  font-weight: 600;
 }
 
 .about-content > p {
-    font-size: 0.9em;
-    font-weight: 400;
+  font-size: 0.9em;
+  font-weight: 400;
 }
+
 #youth-logo {
-  max-width:50%;
-  padding:1rem 2.8rem 1rem 2.8rem;
-  border:1px solid #7f7f7f;
+  max-width: 50%;
+  padding: 1rem 2.8rem 1rem 2.8rem;
+  border: 1px solid #7f7f7f;
   margin: auto;
 }
 
 .about-past {
   background-color: #fff;
-  margin-top: 1%;
-  padding:4% 4% 8% 4%;
+  margin-top: 1px;
+  padding: 4% 4% 8% 4%;
 }
+
 .about-past-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-.about-past-content > h3{
-  font-size:1.3em;
-  font-weight:600;
-}
-
-.about-past-content > p{
-    font-size:0.9em;
-    font-weight:400;
-    width:80%;
-  }
-
-.our-last-meet {
-  margin-top:5%;
-  display:flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
-  gap:8px;
+  text-align: center;
+}
+
+.about-past-content > h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+.about-past-content > p {
+  font-size: 0.9em;
+  font-weight: 400;
+  width: 80%;
+}
+
+.our-last-meet {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 .about-card-2017 {
-    background-image: url('images/YC-summit-1.jpg');
-    background-repeat: no-repeat;
-    background-size:cover;
-    box-shadow: inset 0 0 0 2000px rgba(105, 35, 3, 0.81);
-    width:80%;
-    height:40vh;
+  background-image: url('images/YC-summit-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(105, 35, 3, 0.81);
+  width: 80%;
+  height: 40vh;
 }
 
 .about-card-2019 {
-    background-image: url('images/48872086993_ceb021ba63_k.jpg');
-    background-repeat: no-repeat;
-    background-size:cover;
-    box-shadow: inset 0 0 0 2000px rgba(105, 35, 3, 0.81);
-    width:80%;
-    height:40vh;
+  background-image: url('images/48872086993_ceb021ba63_k.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(105, 35, 3, 0.81);
+  width: 80%;
+  height: 40vh;
 }
 
 .youth-summit {
-    color:white;
-  }
+  color: white;
+}
 
 .youth-summit > h3 {
-    font-size:2em;
+  font-size: 2em;
 }
 
 .partners {
-    background-color: var(--secondary-color);
-    padding:4% 2% 4% 2%;
+  background-color: var(--secondary-color);
+  padding: 4% 2% 4% 2%;
 }
+
 .partner-head > h3 {
-   font-size:1.5em;
-   color:var(--base-color)
+  font-size: 1.5em;
+  color: var(--base-color);
 }
+
 .partner-image {
-  margin-top:3%;
-  display:flex;
+  margin-top: 3%;
+  display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items:center;
-  gap:12px;
+  align-items: center;
+  gap: 12px;
 }
 
 .footer-logo {
-    width:100px;
+  width: 100px;
 }
 
 .copyright {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap:18px;
-  padding:5%;
-}
-.copyright > img {
-    width: 200px;
+  gap: 18px;
+  padding: 5%;
 }
 
-@media screen and (min-width:768px){
+.copyright > img {
+  width: 200px;
+}
+
+@media screen and (min-width: 768px) {
   .about-section {
     background-image: url('images/about_bg_01.png');
-    background-size:100%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-color: var(--base-color);
-}
-  /* .top {
-    background-color:var(--secondary-color);
-    display:flex;
-    justify-content:flex-end;
-    align-items: center;
-    gap:8px;
-    padding:1% 2% 1% 0;
-    display:none;
-  }
-  .fa-twitter, .fa-facebook-f, a {
-    color: #ffffff;
-  } */
-  .navigation-section {
-    padding:1% 4% 1% 4%;
-    display:flex;
-    justify-content: space-between; 
-    align-items: center;
-  }
- .navigation-section > a{
-     display:block;
- }
-
- .home-logo {
-  width:100px;
-}
-  .fa-bars {
-    display:none;
-  }
-  li a{
-    color:var(--secondary-color);
-    font-size:1.2em;
   }
 
-  .nav-links{
-    display:block;
-  }
-
-  .nav-links > ul {
+  .top {
+    background-color: var(--secondary-color);
     display: flex;
-    align-items:center;
-    gap:18px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    padding: 1% 5% 1% 0;
+  }
+
+  .fa-twitter,
+  .fa-facebook-f,
+  a {
+    color: #fff;
+  }
+
+  .navigation-section {
+    padding: 1% 4% 1% 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+  }
+
+  li a {
+    color: var(--secondary-color);
+    font-size: 1.2em;
+  }
+
+  .navigation-section > a {
+    display: block;
+  }
+
+  .home-logo {
+    width: 100px;
+  }
+
+  .fa-bars,
+  .fa-x {
+    display: none;
+  }
+
+  .nav-items {
+    display: block;
+    display: flex;
+    align-items: center;
+    gap: 18px;
   }
 
   li a.home:hover {
-    color:var(--primary-color);
-    border-bottom:1px solid var(--primary-color);
+    color: var(--primary-color);
+    border-bottom: 1px solid var(--primary-color);
   }
 
-  a.about-us-link:visited{
-    color:var(--primary-color);
-  }
-  
   li a.home:active {
     background-color: var(--base-color);
   }
@@ -295,53 +349,62 @@ p.about {
     color: #aca9a9;
   }
 
-  a.disabled:hover{
-    cursor:default;
+  a.disabled:hover {
+    cursor: default;
   }
+
   .about-contents {
-    gap:20px;
+    gap: 20px;
   }
+
   .about-title {
-    font-size:3rem;
-    max-width:60%;
+    font-size: 3rem;
+    max-width: 60%;
     margin: auto;
   }
 
   .about-description {
-    font-size:1em;
-    font-weight:500;
-    max-width:60%;
+    font-size: 1em;
+    font-weight: 500;
+    max-width: 60%;
   }
+
   .about-us {
-    padding-top:2rem;
+    padding-top: 2rem;
   }
+
   #youth-logo {
-    max-width:30%;
+    max-width: 30%;
   }
+
   .our-last-meet {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: center;
   }
-   
+
   .about-card-2017 {
-    width:30%;
+    width: 30%;
   }
+
   .about-card-2019 {
     width: 30%;
   }
+
   .youth-summit {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding:0 1rem 0 1rem;
+    padding: 0 1rem 0 1rem;
   }
+
   .partners {
-    display:none;
+    display: none;
   }
+
   .copyright {
-     background-color: var(--secondary-color);
-     color: var(--base-color);
+    background-color: var(--secondary-color);
+    color: var(--base-color);
   }
 }
