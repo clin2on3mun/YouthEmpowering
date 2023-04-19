@@ -96,10 +96,6 @@ footer,
   }
 }
 
-a.home:visited {
-  color: var(--primary-color);
-}
-
 a.disabled {
   color: #b0adad;
 }
@@ -336,10 +332,6 @@ hr {
   li a.about-us-link:hover {
     color: var(--primary-color);
     border-bottom: 1px solid var(--primary-color);
-  }
-
-  a.home:visited {
-    color: var(--primary-color);
   }
 
   li a.about-us-link:active {
