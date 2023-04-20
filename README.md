@@ -76,6 +76,7 @@
 > Add a link to your deployed project.
 
 - [Live Demo Link](https://google.com)
+- [Introduction to the project](https://www.loom.com/share/286613e912a9414e86587f3aa20a7143)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -137,7 +138,7 @@ You can deploy this project using:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Munana Clinton**
 
 - GitHub: [@githubhandle](https://github.com/clin2on3mun)
 - Twitter: [@twitterhandle](https://twitter.com/ClintonMunana)
