@@ -278,7 +278,7 @@ p.about {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 18px;
+  gap: 30px;
   padding: 5%;
 }
 
@@ -300,7 +300,7 @@ p.about {
     justify-content: flex-end;
     align-items: center;
     gap: 8px;
-    padding: 1% 5% 1% 0;
+    padding: 1% 10% 1% 0;
   }
 
   .fa-twitter,
@@ -310,7 +310,7 @@ p.about {
   }
 
   .navigation-section {
-    padding: 1% 4% 1% 4%;
+    padding: 1% 10% 1% 4%;
     display: flex;
     justify-content: space-between;
     align-items: center;
