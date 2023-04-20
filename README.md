@@ -34,7 +34,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [Youth connect Africa Website] <a name="about-project"></a>
 
 > Describe your project in 1 or 2 sentences.
 
@@ -75,7 +75,7 @@
 
 > Add a link to your deployed project.
 
-- [Live Demo Link](https://google.com)
+- [Live Demo Link](https://clin2on3mun.github.io/YouthEmpowering/)
 - [Introduction to the project](https://www.loom.com/share/286613e912a9414e86587f3aa20a7143)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
