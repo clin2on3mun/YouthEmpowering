@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://kit.fontawesome.com/75d86a86f1.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="styles.css">
         <title>Youth Empowering Africa Summit </title>
         </head>
     <body>
@@ -91,13 +92,11 @@
                 const navLinks = document.querySelector('.nav-items');
                 const closeIcon = document.querySelector('.fa-x');
 
-                 HamburgMenu.addEventListener('click', () => {
-                    navLinks.classList.toggle('active');
-                  });
-
-                closeIcon.addEventListener('click', ()=>{
-                      navLinks.classList.remove('active');
-                 });     
+                const HamburgMenuBar = () => {
+                  navLinks.classList.toggle('active');
+                };
+                HamburgMenu.addEventListener('click', HamburgMenuBar);
+                closeIcon.addEventListener('click', HamburgMenuBar);  
             </script>
         </body>
         </html>
