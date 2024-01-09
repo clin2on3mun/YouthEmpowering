@@ -67,14 +67,17 @@ footer,
 
 @media screen and (max-width: 767px) {
   .nav-items.active {
+    left: 0;
+  }
+
+  .nav-items {
     position: fixed;
     background-color: #fff;
     height: 100vh;
     width: 100%;
     top: 0;
-    left: 0;
-    transition: 0.7s ease-in-out;
-    display: block;
+    left: -100%;
+    transition: all 0.7s ease-in-out;
     display: flex;
     flex-direction: column;
     gap: 2%;
