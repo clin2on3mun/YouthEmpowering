@@ -3,13 +3,12 @@ const navLinks = document.querySelector('.nav-items');
 const closeIcon = document.querySelector('.fa-x');
 const card = document.querySelector('.feature-card');
 
-HamburgMenu.addEventListener('click', () => {
+const HamburgMenuBar = () => {
   navLinks.classList.toggle('active');
-});
+};
+HamburgMenu.addEventListener('click', HamburgMenuBar);
 
-closeIcon.addEventListener('click', () => {
-  navLinks.classList.remove('active');
-});
+closeIcon.addEventListener('click', HamburgMenuBar);
 
 const featureSpeakers = [{
   id: 1,
