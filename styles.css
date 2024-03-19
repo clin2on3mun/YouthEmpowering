@@ -70,6 +70,13 @@ footer,
     left: 0;
   }
 
+  .menu-logo {
+    width: 100px;
+    display: block;
+    position: absolute;
+    top: 4%;
+  }
+
   .nav-items {
     position: fixed;
     background-color: #fff;
@@ -297,6 +304,10 @@ hr {
   .home-logo {
     width: 100px;
     display: block;
+  }
+
+  .menu-logo {
+    display: none;
   }
 
   .fa-bars,
