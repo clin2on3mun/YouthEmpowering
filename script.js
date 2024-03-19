@@ -8,4 +8,3 @@ const HamburgMenuBar = () => {
 HamburgMenu.addEventListener('click', HamburgMenuBar);
 
 closeIcon.addEventListener('click', HamburgMenuBar);
-
