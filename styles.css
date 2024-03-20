@@ -65,9 +65,18 @@ footer,
   color: var(--primary-color);
 }
 
+
+
 @media screen and (max-width: 767px) {
   .nav-items.active {
     left: 0;
+  }
+
+  .menu-logo {
+    width: 100px;
+    display: block;
+    position: absolute;
+    top: 4%;
   }
 
   .nav-items {
@@ -243,6 +252,8 @@ hr {
   margin: 15px 0 0 15px;
   width: 110px;
   height: 124.88px;
+  object-fit:cover;
+  object-position: top;
 }
 
 .speaker-details {
@@ -297,6 +308,10 @@ hr {
   .home-logo {
     width: 100px;
     display: block;
+  }
+
+  .menu-logo {
+    display: none;
   }
 
   .fa-bars,

@@ -77,11 +77,22 @@ ul {
   top: 5%;
 }
 
+.menu-logo {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .nav-link {
     font-size: 2em;
     color: var(--secondary-color);
     font-weight: 700;
+  }
+
+  .menu-logo {
+    width: 100px;
+    display: block;
+    position: absolute;
+    top: 4%;
   }
 }
 
