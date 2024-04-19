@@ -20,6 +20,7 @@
                 <i class="fa-sharp fa-solid fa-bars"></i>   
                 <a href="index.html"><img src="images/YCA Main Logo.png" class ="home-logo" alt="youth-connect-logo"></a> 
                     <ul class="nav-items">
+                        <img src="images/YCA Main Logo.png" class="menu-logo"  alt="logo">  
                         <i class="fa-solid fa-x"></i>
                         <li><a href="index.html" class="home nav-link">Home</a></li>
                         <li><a href="#" class="about-us-link nav-link">About</a></li>
@@ -87,16 +88,6 @@
                      <p> © Copyright YouthConnekt Africa 2023. All Rights Reserved.</p>
                     </section> 
             </footer> 
-            <script>
-                const HamburgMenu = document.querySelector('.fa-bars');
-                const navLinks = document.querySelector('.nav-items');
-                const closeIcon = document.querySelector('.fa-x');
-
-                const HamburgMenuBar = () => {
-                  navLinks.classList.toggle('active');
-                };
-                HamburgMenu.addEventListener('click', HamburgMenuBar);
-                closeIcon.addEventListener('click', HamburgMenuBar);  
-            </script>
+            <script src="script.js"></script>
         </body>
         </html>
