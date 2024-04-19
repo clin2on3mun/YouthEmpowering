@@ -70,13 +70,6 @@ footer,
     left: 0;
   }
 
-  .menu-logo {
-    width: 100px;
-    display: block;
-    position: absolute;
-    top: 4%;
-  }
-
   .nav-items {
     position: fixed;
     background-color: #fff;
@@ -136,6 +129,10 @@ a.disabled:hover {
   font-size: 2.5em;
   font-weight: 800;
   line-height: 1em;
+  background-image: url(images/laura-vinck-Hyu76loQLdk-unsplash.jpg);
+  background-size: cover;
+  -webkit-background-clip: text;
+  color:transparent;
 }
 
 .header-description {
@@ -250,8 +247,6 @@ hr {
   margin: 15px 0 0 15px;
   width: 110px;
   height: 124.88px;
-  object-fit: cover;
-  object-position: top;
 }
 
 .speaker-details {
@@ -306,10 +301,6 @@ hr {
   .home-logo {
     width: 100px;
     display: block;
-  }
-
-  .menu-logo {
-    display: none;
   }
 
   .fa-bars,
