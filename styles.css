@@ -132,7 +132,6 @@ a.disabled:hover {
   background-image: url(images/peter-olexa-mxIGWk111u0-unsplash.jpg);
   background-position: top right;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   color: transparent;
 }
 
