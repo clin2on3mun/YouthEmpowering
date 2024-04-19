@@ -132,7 +132,7 @@ a.disabled:hover {
   background-image: url(images/laura-vinck-Hyu76loQLdk-unsplash.jpg);
   background-size: cover;
   -webkit-background-clip: text;
-  color:transparent;
+  color: transparent;
 }
 
 .header-description {
